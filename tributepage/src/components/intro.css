@@ -1,0 +1,153 @@
+.intro{
+    padding: 100px 0 0;
+    position: relative;
+}
+
+.quotes{
+    width: 100%;
+    padding: 0 200px;
+    display: flex;
+}
+
+.quotes_logo{
+    font-size: 80px;
+    margin: 0 20px;
+}
+
+.quotes_txt{
+    width: 50%;
+    position: relative;
+    padding: 20px;
+}
+
+.quotes_txt p{
+    font-size:60px;
+    font-weight: 700;
+}
+
+.quotes_img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.quotes_img img{
+    border-radius: 10px;
+    transition: 300ms;
+    position: absolute;
+}
+
+.introduction{
+    padding: 50px 200px;
+}
+
+.about{
+    font-size: 40px;
+    position: relative;
+    margin: 20px 0;
+}
+
+.about::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: rgba(56, 22, 224, 0.633);
+    bottom: -8px;
+    border-radius: 5px;
+}
+
+.history p{
+    font-size: 20px;
+    font-weight: 450;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.facts h2{
+    font-size: 25px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.facts h2::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: rgba(56, 22, 224, 0.633);
+    bottom: -10px;
+    border-radius: 5px;
+}
+
+.fact ul{
+    margin: 40px;
+}
+
+.fact ul li{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 1060px) and (min-width: 768px) {
+    .quotes{
+       padding: 0 10px;
+    }
+    .quotes_txt p{
+       font-size: 48px;
+    }
+    .introduction{
+        padding: 50px 100px;
+    }
+   }
+
+   @media only screen and (max-width: 767px) {
+    .quotes{
+        flex-direction: column;
+        padding: 0 20px;
+        height: 900px;
+    }
+    .quotes_txt{
+        width: 100%;
+    }
+    .quotes_img{
+        width: 100%;
+        top: 200px;
+    }
+    .introduction{
+        padding: 50px 80px;
+    }
+   }
+
+   @media only screen and (max-width: 767px) {
+    .quotes_txt p{
+        font-size: 24px;
+    }
+    .quotes {
+        height: 630px;
+    }
+    .quotes_logo {
+        font-size: 37px;
+        margin: 0px;
+    }
+    .quotes_img {
+        top: 216px;
+    }
+    .introduction {
+        padding: 50px 30px;
+    }
+   }
+
+   @media screen and (max-width: 330px) {
+    .quotes_img img{
+        width: 250px;
+    }
+    .fact ul {
+        margin: 10px 17px;
+    }
+    .introduction {
+        padding: 50px 20px;
+    }
+   }
